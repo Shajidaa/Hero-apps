@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link, Links, NavLink } from 'react-router';
 import logo from "../../assets/logo.png"
+import gitHub from "../../assets/fi_2111432.png"
 const Navbar = () => {
     // const links=
     //     {<li>ld</li>}
     
     return (
-        <div className="navbar bg-base-100 shadow-sm">
+        <div className="navbar bg-white stroke-1 
+        stroke-[#E9E9E9] shadow-sm">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -15,9 +17,15 @@ const Navbar = () => {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-       <NavLink to='/'><li>Home</li></NavLink>
-       <NavLink to='/apps'><li>Apps</li></NavLink>
-       <NavLink to='/installation'><li>Installation</li></NavLink>
+   <NavLink    to='/'><li className='text'>Home</li></NavLink>
+       <NavLink  to='/apps'><li className='text'>Apps</li></NavLink>
+       <NavLink  to='/installation'><li className='text '>Installation</li></NavLink>
+        
+
+    <Link to='https://github.com/Shajidaa'
+     target='blank' className=" btn text-white 
+     bg-linear-to-r from-[#632EE3] to-[#9F62F2] font-bold text-base  "> <span> <img src={gitHub} alt="" /></span> Contribute</Link>
+ 
       </ul>
     </div>
     <Link to='/'  className="btn btn-ghost text-xl">
@@ -27,15 +35,16 @@ const Navbar = () => {
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 ">
-      <NavLink  className='ml-8'   to='/'><li>Home</li></NavLink>
-       <NavLink className='ml-8' to='/apps'><li>Apps</li></NavLink>
-       <NavLink className='ml-8' to='/installation'><li>Installation</li></NavLink>
+      <NavLink     to='/'><li className='text  '>Home</li></NavLink>
+       <NavLink  to='/apps'><li className='text '>Apps</li></NavLink>
+       <NavLink to='/installation'><li className='text '>Installation</li></NavLink>
     </ul>
   </div>
-  <div className="navbar-end">
+  <div className="navbar-end md:flex hidden">
 
     <Link to='https://github.com/Shajidaa'
-     target='blank' className="btn">Contribute</Link>
+     target='blank' className=" btn text-white 
+     bg-linear-to-r from-[#632EE3] to-[#9F62F2] font-bold text-base  "> <span> <img src={gitHub} alt="" /></span> Contribute</Link>
   </div>
 </div>
     );

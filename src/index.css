@@ -4,6 +4,9 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+/* :root {
+    --bg-gradient: linear-gradient(to right, #632EE3, #9F62F2);
+} */
 
 .inter {
     font-family: "Inter", sans-serif;
@@ -17,3 +20,49 @@
     color: transparent;
     -webkit-text-fill-color: transparent;
 }
+
+.text {
+    /* @apply ml-8 font-base font-semibold  */
+    margin-left: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    border-bottom: 1px solid transparent;
+}
+
+.text:hover {
+    font-size: 1rem;
+    background-image: linear-gradient(to right, #632EE3, #9F62F2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    /* text-decoration: underline; */
+    /* border-bottom: 1px solid; */
+    position: relative;
+}
+
+.text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, #632EE3, #9F62F2);
+}
+
+.text:hover::after {
+    width: 100%;
+}
+
+/* .contribute {
+    background-image: linear-gradient(to right, #632EE3, #9F62F2);
+    color: white;
+}
+
+.contribute::before {
+    content: url(./assets/fi_2111432.png);
+    position: center;
+
+} */
