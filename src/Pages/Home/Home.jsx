@@ -1,14 +1,29 @@
 import React from 'react';
-import useProducts from '../../Hooks/Hooks';
+
+import useApps from '../../Hooks/Hooks';
+import AppCard from '../../Components/Header/AppCard/AppCard';
 
 const Home = () => {
-    const {loading,error,products}=useProducts();
-    console.log({loading,error,products});
+    const {loading,error,apps}=useApps();
+    // console.log({loading,error,apps});
+    const trendingApps=apps.slice(0,8);
+    // console.log(trendingApps);
     
     return (
         <div>
-            this is home page 
-        </div>
+            <div>
+        <h1>Trending Apps</h1>
+           <p>Explore All Trending Apps on the 
+            Market developed by us.</p>
+            </div>
+           <div>
+            {
+                trendingApps.map(app=>
+                <AppCard key={app.id} app={app} >
+                 </AppCard>)
+            }
+           </div>
+        </div> 
     );
 };
 
