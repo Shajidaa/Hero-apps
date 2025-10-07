@@ -28,7 +28,7 @@ const Navbar = () => {
  
       </ul>
     </div>
-    <Link to='/'  className="btn btn-ghost text-xl">
+    <Link to='/'  className=" flex gap-1 flex-row justify-center items-center text-xl">
     <span><img className='size-10' src={logo} alt="" /></span>
    <span className='font-bold text-base gradient-text'>HERO.IO</span> 
     </Link>
