@@ -1,0 +1,366 @@
+[
+  {
+    "image": "https://images.unsplash.com/photo-1580894908361-967195033215",
+    "title": "Time Planner: Schedule & Tasks",
+    "companyName": "Boostify Apps",
+    "id": 1,
+    "description": "Time Planner: Schedule & Tasks is designed for people who want to manage every aspect of their day with precision. It combines a sleek interface with intelligent scheduling tools that make organizing tasks feel effortless. Users can divide their goals into projects, assign due dates, and set priority levels to focus on what matters most. The app supports both short-term and long-term planning, helping you visualize how your time is spent across work, study, and personal life. A powerful calendar view allows for drag-and-drop task management, while smart reminders ensure you never miss a commitment. The integrated analytics dashboard gives insights into your daily habits, revealing how efficiently you use your time. With dark mode, widget support, and cross-device synchronization, Time Planner is not just a to-do list—it’s a full productivity ecosystem built for consistency, balance, and growth in your everyday routine.",
+    "size": 48,
+    "reviews": 8700,
+    "ratingAvg": 4.8,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 5300 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+    "title": "Morning Habits – Daily Routine",
+    "companyName": "LifeTrack Studio",
+    "id": 2,
+    "description": "Morning Habits – Daily Routine helps you start every day with purpose and clarity. The app provides a customizable structure for your mornings, turning small positive actions into consistent routines. You can design step-by-step sequences for activities like meditation, journaling, stretching, or hydration, and receive gentle reminders to stay on track. The visual progress tracker encourages consistency by showing your streaks and achievements. With motivational quotes and habit insights, it inspires discipline and self-awareness. The app also adapts to your energy levels—if your mornings change, it adjusts seamlessly to maintain balance. Over time, Morning Habits learns your preferences and offers suggestions to improve efficiency. Whether you’re building a workout ritual, learning a new skill, or simply creating calm before work, this app transforms chaotic mornings into mindful, productive beginnings. It’s your personal assistant for starting the day the right way, every single day.",
+    "size": 52,
+    "reviews": 6200,
+    "ratingAvg": 4.7,
+    "downloads": 8500000,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 1600 },
+      { "name": "5 star", "count": 3250 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1556740749-887f6717d7e4",
+    "title": "Focus Plant: Pomodoro Forest",
+    "companyName": "GreenMind Labs",
+    "id": 3,
+    "description": "Focus Plant: Pomodoro Forest turns productivity into a mindful and visually calming experience. Using the Pomodoro technique, it allows you to set focused work sessions that grow digital plants with every minute you concentrate. The more sessions you complete, the more your forest flourishes—an encouraging metaphor for steady progress. The app’s clean interface minimizes distractions and keeps your attention on the task ahead. Customizable timers, gentle notifications, and session analytics help you maintain balance between focus and rest. You can tag sessions by task or subject, review weekly focus charts, and set goals for consistency. Background soundscapes such as rain, forest wind, or soft piano add tranquility to your workspace. Focus Plant is not just a timer—it’s a growth journey. Every focused moment you invest nurtures both your virtual forest and your real-world discipline, turning productivity into something peaceful, rewarding, and sustainable.",
+    "size": 65,
+    "reviews": 9100,
+    "ratingAvg": 4.9,
+    "downloads": 9500000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 6400 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1517841905240-472988babdf9",
+    "title": "Alarmy – Alarm Clock & Sleep",
+    "companyName": "SleepyHead Inc.",
+    "id": 4,
+    "description": "Alarmy – Alarm Clock & Sleep is not just an alarm clock; it’s a wake-up revolution. Designed to help even the deepest sleepers start their day on time, Alarmy offers creative challenges that make hitting snooze nearly impossible. You can set wake-up missions like solving puzzles, shaking your phone, or taking a photo of a specific object to stop the alarm. This forces your mind to engage immediately, ensuring you truly wake up. The app also includes sleep tracking and calming bedtime sounds that promote healthy sleep patterns. With a detailed sleep analysis dashboard, you can understand your rest cycles and adjust accordingly. The smart alarm adapts to your schedule, waking you at the optimal time during light sleep. Alarmy’s bright, minimal design and smooth performance make mornings less stressful and more productive, helping you rise with energy and purpose every single day.",
+    "size": 58,
+    "reviews": 7600,
+    "ratingAvg": 4.8,
+    "downloads": 9100000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 1400 },
+      { "name": "5 star", "count": 5500 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1603791452906-b8c6e1eebd4e",
+    "title": "MindfulMe: Meditation & Calm",
+    "companyName": "ZenFlow Studio",
+    "id": 5,
+    "description": "MindfulMe: Meditation & Calm brings serenity to your day with guided meditations, breathing exercises, and sleep soundscapes. Whether you’re dealing with stress, anxiety, or sleeplessness, the app provides tailored sessions that help you unwind and regain clarity. A variety of programs target specific goals like focus, emotional balance, or relaxation. Each session is crafted with soothing voiceovers and ambient music to enhance your experience. The daily check-in feature helps you track mood changes and mindfulness progress. You can set meditation reminders, track streaks, and even follow challenges to build consistency. MindfulMe encourages you to slow down, breathe deeply, and reconnect with the present moment. Its soft visuals, gentle animations, and minimal design create a safe digital space for calm and reflection. Perfect for beginners or experienced meditators alike, MindfulMe helps you cultivate peace one breath at a time.",
+    "size": 70,
+    "reviews": 6500,
+    "ratingAvg": 4.6,
+    "downloads": 8800000,
+    "ratings": [
+      { "name": "1 star", "count": 350 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 3800 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1573164574472-797cdf4a5839",
+    "title": "FitTrack: Steps & Health",
+    "companyName": "WellSync Ltd.",
+    "id": 6,
+    "description": "FitTrack: Steps & Health is the ultimate wellness companion for people who want to take charge of their physical activity and health goals. The app transforms your daily movement into insightful data that keeps you motivated. It automatically counts your steps, calculates distance, and estimates calorie burn with accuracy. FitTrack also lets you set personal goals and view progress trends over time. You can sync data with your wearable devices to get a complete picture of your health journey. Beyond step tracking, it includes hydration reminders, heart rate tracking (when supported), and daily fitness summaries. The intuitive dashboard highlights your most active hours, helping you plan smarter workouts. Its clean visuals and motivational badges encourage small, consistent progress. Whether you’re walking, running, or just staying active, FitTrack keeps you accountable. It’s not just about numbers—it’s about creating a healthier lifestyle, one step at a time.",
+    "size": 60,
+    "reviews": 5900,
+    "ratingAvg": 4.4,
+    "downloads": 7600000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 1700 },
+      { "name": "5 star", "count": 2400 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1581090700227-1e37b190418e",
+    "title": "Study Zone: Focus Timer",
+    "companyName": "EduCore Studio",
+    "id": 7,
+    "description": "Study Zone: Focus Timer helps students and professionals build concentration through structured time sessions. Inspired by the Pomodoro technique, it divides work into focus intervals followed by short breaks. Each session keeps you on track while preventing burnout. The minimalist design minimizes distractions so your attention stays on learning, not on the clock. You can tag sessions by subject, track your total study hours, and view weekly productivity graphs. A built-in reward system celebrates consistency, motivating you to maintain healthy study habits. The app also offers ambient background sounds like rain, lo-fi music, or white noise to improve focus. Customizable reminders ensure you start your sessions on time, while the analytics page visualizes your progress. Study Zone is ideal for exam preparation, research, or deep work sessions. It’s a productivity companion that teaches you discipline, organization, and how to make study time truly effective.",
+    "size": 50,
+    "reviews": 4700,
+    "ratingAvg": 4.5,
+    "downloads": 6700000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 1300 },
+      { "name": "5 star", "count": 2100 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1593642634367-d91a135587b5",
+    "title": "Daily Quotes: Motivation & Focus",
+    "companyName": "SoulFuel Apps",
+    "id": 8,
+    "description": "Daily Quotes: Motivation & Focus brings inspiration to your fingertips every morning. It features a beautifully designed interface that delivers handpicked quotes from philosophers, authors, and modern leaders to spark motivation. You can save your favorite quotes, share them on social media, or set daily reminders for encouragement. Each quote card is paired with calming visuals that reinforce positivity. The app learns your mood patterns and tailors its recommendations over time. For those seeking consistency, the streak tracker keeps count of how many days you’ve stayed inspired. A 'Reflection Mode' invites you to write short journal entries about what each quote means to you, turning simple motivation into mindfulness. Whether you’re chasing goals, overcoming challenges, or simply trying to start your day right, Daily Quotes keeps your mindset strong. It’s more than a quote app—it’s a daily ritual for motivation and clarity.",
+    "size": 38,
+    "reviews": 5100,
+    "ratingAvg": 4.7,
+    "downloads": 8300000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 1100 },
+      { "name": "5 star", "count": 3100 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d",
+    "title": "SleepWell: Tracker & Sounds",
+    "companyName": "DreamTech",
+    "id": 9,
+    "description": "SleepWell: Tracker & Sounds helps you understand your sleep cycles and improve rest quality through science-backed insights. Using sound analysis and gentle wake algorithms, it tracks how deeply you sleep and when you toss or wake. The app offers soothing bedtime sounds like ocean waves, white noise, or rain to help you fall asleep faster. The smart alarm gently wakes you during light sleep, reducing grogginess. You can monitor sleep statistics such as duration, efficiency, and bedtime regularity over weeks or months. SleepWell’s goal-based approach encourages small adjustments that lead to long-term improvement. Night mode reduces blue light exposure, while meditation playlists calm your mind. Whether you’re trying to recover from insomnia or optimize energy levels, SleepWell gives you actionable insights. It’s a complete sleep companion—blending technology, mindfulness, and design—to make every night more restful and refreshing.",
+    "size": 80,
+    "reviews": 7300,
+    "ratingAvg": 4.6,
+    "downloads": 9200000,
+    "ratings": [
+      { "name": "1 star", "count": 280 },
+      { "name": "2 star", "count": 450 },
+      { "name": "3 star", "count": 720 },
+      { "name": "4 star", "count": 1700 },
+      { "name": "5 star", "count": 4150 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1532619187608-e5375cab36aa",
+    "title": "BudgetEase: Expense Tracker",
+    "companyName": "FinanceFlow",
+    "id": 10,
+    "description": "BudgetEase: Expense Tracker empowers you to manage your finances effortlessly. It categorizes expenses automatically and gives a clear overview of your income and spending habits. The dashboard visualizes data through colorful charts, making money management intuitive and even fun. You can set budgets for categories like groceries, travel, or entertainment, and get alerts when nearing limits. Recurring expense detection saves time, while receipt scanning ensures accuracy. The app’s analytics reveal where your money goes and how you can save more effectively. BudgetEase also syncs securely across devices, ensuring your financial information stays private and accessible. Its minimalist design keeps focus on what truly matters—your financial growth. By helping you track, plan, and control spending, BudgetEase encourages financial discipline. Whether you’re saving for a goal or just trying to understand your cash flow, this app brings clarity to your financial life.",
+    "size": 57,
+    "reviews": 6800,
+    "ratingAvg": 4.7,
+    "downloads": 8400000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 1600 },
+      { "name": "5 star", "count": 3800 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1524856571329-8f53b3a3cbb3",
+    "title": "WaterMinder: Drink Reminder",
+    "companyName": "Hydrate Labs",
+    "id": 11,
+    "description": "WaterMinder: Drink Reminder keeps you hydrated and healthy by tracking your daily water intake. Using customizable reminders, it ensures you never forget to drink throughout the day. You can set personalized goals based on weight, activity level, or weather conditions. Each glass logged fills a visual bottle, giving you a satisfying sense of progress. The app syncs with smartwatches and health platforms, allowing seamless tracking. Statistics and graphs show hydration trends and help you understand patterns. WaterMinder also provides educational insights on the benefits of consistent hydration, improving energy and focus. Its clean design and soothing color palette make tracking refreshing rather than tedious. Whether you’re at the gym, work, or relaxing at home, WaterMinder keeps hydration effortless and rewarding. It’s a small reminder that builds a big habit—keeping your body refreshed and your mind sharp every single day.",
+    "size": 35,
+    "reviews": 4400,
+    "ratingAvg": 4.6,
+    "downloads": 6400000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 1100 },
+      { "name": "5 star", "count": 2200 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1487014679447-9f8336841d58",
+    "title": "TaskNest: To-Do Organizer",
+    "companyName": "FlowFrame Apps",
+    "id": 12,
+    "description": "TaskNest: To-Do Organizer transforms chaotic to-do lists into a simple, elegant productivity system. It helps you capture, categorize, and prioritize tasks effortlessly. Whether you’re planning projects, shopping lists, or study schedules, TaskNest adapts to your workflow. The app uses color-coded labels and deadlines to keep everything organized. Smart reminders notify you at just the right time, so you never forget important deadlines. You can also group tasks by project or goal, allowing for clear structure. TaskNest’s drag-and-drop interface makes reordering quick and satisfying. Daily summaries and progress bars help visualize productivity. The app syncs across devices, ensuring seamless continuity between desktop and mobile. TaskNest’s goal isn’t just to help you remember—it’s to help you execute efficiently. By simplifying complexity and promoting clarity, TaskNest empowers you to stay productive, focused, and stress-free in a world full of distractions.",
+    "size": 54,
+    "reviews": 6100,
+    "ratingAvg": 4.8,
+    "downloads": 8700000,
+    "ratings": [
+      { "name": "1 star", "count": 210 },
+      { "name": "2 star", "count": 340 },
+      { "name": "3 star", "count": 620 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 3430 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+    "title": "TravelMate: Smart Planner",
+    "companyName": "Wanderly Inc.",
+    "id": 13,
+    "description": "TravelMate: Smart Planner is the modern traveler’s digital assistant, designed to make trip organization effortless and enjoyable. From spontaneous weekend getaways to long international adventures, this app handles it all. You can plan detailed itineraries with flights, hotels, and local attractions in one place. The built-in AI recommends restaurants, activities, and hidden gems based on your interests and budget. Real-time weather updates and currency converters make traveling stress-free. TravelMate’s collaborative mode lets friends or family join and modify shared plans, ensuring everyone stays on the same page. Offline maps, safety tips, and expense tracking make it indispensable for solo travelers too. The clean design with location-based reminders ensures you never miss an experience. Whether you're exploring new cities or revisiting old favorites, TravelMate helps you travel smarter, safer, and with confidence. It’s more than a planner—it’s your personal tour guide in your pocket.",
+    "size": 95,
+    "reviews": 8200,
+    "ratingAvg": 4.8,
+    "downloads": 11500000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 4400 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+    "title": "MindBoard: Idea Sketcher",
+    "companyName": "CreativePulse",
+    "id": 14,
+    "description": "MindBoard: Idea Sketcher empowers thinkers, designers, and creators to visualize concepts instantly. Whether you’re brainstorming business strategies, outlining essays, or designing UI ideas, MindBoard helps you turn thoughts into visual structures. The flexible canvas supports sticky notes, sketches, arrows, and text, mimicking a real whiteboard but smarter. Cloud sync ensures your boards are accessible across devices. You can export boards as PDFs or images to share with teammates. Its collaboration mode allows real-time co-editing—perfect for virtual brainstorming sessions. Templates for flowcharts, wireframes, and mind maps make it ideal for both students and professionals. The clean interface promotes creativity without clutter. MindBoard isn’t just about drawing—it’s about thinking visually. It encourages clarity, connection, and innovation in every project. For creators who think differently, it’s the ultimate digital playground for ideas to grow and evolve beautifully.",
+    "size": 88,
+    "reviews": 6400,
+    "ratingAvg": 4.7,
+    "downloads": 9100000,
+    "ratings": [
+      { "name": "1 star", "count": 270 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 720 },
+      { "name": "4 star", "count": 1600 },
+      { "name": "5 star", "count": 3410 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f",
+    "title": "FocusTime Pro: Productivity Timer",
+    "companyName": "TimeWise Labs",
+    "id": 15,
+    "description": "FocusTime Pro: Productivity Timer is a must-have for anyone looking to master deep work and eliminate distractions. Inspired by neuroscience-backed focus cycles, it helps users maintain peak attention while balancing rest periods. Set custom timers, add task labels, and watch your productivity stats grow over time. The dashboard visualizes focus sessions and interruptions, helping you identify improvement patterns. FocusTime Pro blocks distracting apps during sessions to keep your workflow clean. A built-in achievement system rewards consistent focus streaks, motivating long-term discipline. Background sounds like lo-fi beats, nature waves, or silence options allow you to personalize your working environment. With dark mode and minimal UI, the app feels calm and professional. Whether you’re coding, studying, or writing, FocusTime Pro transforms your phone from a distraction into a performance tool—helping you achieve flow, efficiency, and balance throughout your day.",
+    "size": 72,
+    "reviews": 7500,
+    "ratingAvg": 4.9,
+    "downloads": 9700000,
+    "ratings": [
+      { "name": "1 star", "count": 180 },
+      { "name": "2 star", "count": 280 },
+      { "name": "3 star", "count": 590 },
+      { "name": "4 star", "count": 1600 },
+      { "name": "5 star", "count": 4850 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c",
+    "title": "Sleep Journal: Night Tracker",
+    "companyName": "CalmiTech",
+    "id": 16,
+    "description": "Sleep Journal: Night Tracker helps you understand and improve your sleep through mindful journaling and smart tracking. Each night, you can log how you felt before bed, your dreams, and your mood upon waking. The app integrates with sensors to automatically detect sleep duration and quality. Over time, its analytics uncover patterns like bedtime consistency, caffeine impact, and stress correlation. Sleep Journal offers relaxation tools—breathing guides, nighttime stories, and soundscapes—to help you unwind naturally. Personalized insights help you set small, realistic goals like earlier sleep or better wind-down routines. Its elegant interface feels calm and meditative, encouraging you to reflect gently each morning. Whether you struggle with insomnia or simply want better rest, Sleep Journal combines mindfulness with modern science to create lasting sleep wellness. It turns every night’s rest into a beautiful act of self-care and discovery.",
+    "size": 64,
+    "reviews": 5300,
+    "ratingAvg": 4.6,
+    "downloads": 7200000,
+    "ratings": [
+      { "name": "1 star", "count": 230 },
+      { "name": "2 star", "count": 380 },
+      { "name": "3 star", "count": 670 },
+      { "name": "4 star", "count": 1600 },
+      { "name": "5 star", "count": 2420 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1605902711622-cfb43c4437e1",
+    "title": "CookSmart: Recipe Planner",
+    "companyName": "FoodiSoft",
+    "id": 17,
+    "description": "CookSmart: Recipe Planner is your personal kitchen assistant designed to simplify meal preparation and inspire creativity. The app features thousands of recipes categorized by cuisine, diet, and cooking time. You can create weekly meal plans, generate shopping lists automatically, and save your favorite dishes. Each recipe includes step-by-step instructions, nutrition facts, and video tutorials. The smart pantry tracker suggests meals based on what you already have, reducing food waste. For health-conscious users, CookSmart adjusts portion sizes and calorie goals. You can even share family recipes and build collaborative cookbooks. The elegant design makes cooking approachable for beginners yet powerful for pros. Whether you’re meal prepping, experimenting, or feeding a crowd, CookSmart transforms your kitchen routine into a delightful experience filled with taste, organization, and inspiration.",
+    "size": 85,
+    "reviews": 9700,
+    "ratingAvg": 4.8,
+    "downloads": 15000000,
+    "ratings": [
+      { "name": "1 star", "count": 350 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 950 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 5700 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1542744095-291d1f67b221",
+    "title": "MindEase: Anxiety Relief",
+    "companyName": "WellMind Labs",
+    "id": 18,
+    "description": "MindEase: Anxiety Relief provides guided exercises to calm your mind and reduce daily stress. Based on cognitive-behavioral techniques and mindfulness research, it offers short, evidence-based sessions that help users manage anxiety effectively. Each activity—from deep-breath timers to visualization guides—is designed to bring balance and peace. The 'Mood Tracker' logs emotional trends, while personalized programs adapt to your needs. MindEase’s soft tones and nature-themed visuals create a serene digital sanctuary. Daily check-ins remind you to pause, breathe, and regain clarity. Expert-curated articles teach coping mechanisms for modern stressors like overthinking or social pressure. The app isn’t about avoiding anxiety—it’s about understanding and mastering it. Whether you need a quick reset or a full self-care session, MindEase brings calm into your pocket anytime, anywhere.",
+    "size": 62,
+    "reviews": 7800,
+    "ratingAvg": 4.9,
+    "downloads": 11000000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 350 },
+      { "name": "3 star", "count": 620 },
+      { "name": "4 star", "count": 1600 },
+      { "name": "5 star", "count": 5030 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1517841905240-472988babdf9",
+    "title": "FitChef: Healthy Recipes",
+    "companyName": "NutriLab",
+    "id": 19,
+    "description": "FitChef: Healthy Recipes makes balanced eating simple, delicious, and achievable. With over 10,000 recipes designed by nutritionists, you’ll find dishes tailored to every dietary preference—vegan, keto, paleo, or high-protein. The smart filters help you search by calories, macros, or prep time. Each recipe includes visuals, cooking steps, and ingredient substitutions. FitChef’s meal planner automatically creates shopping lists and tracks daily nutrition intake. The 'Smart Suggest' feature recommends new recipes based on what you’ve cooked recently, ensuring variety and taste balance. Integration with fitness trackers allows you to sync calorie data effortlessly. FitChef focuses on holistic wellness—fueling both your body and creativity in the kitchen. Whether you’re a busy professional or a passionate cook, it helps you stay consistent with healthy eating goals without sacrificing flavor or joy.",
+    "size": 92,
+    "reviews": 8600,
+    "ratingAvg": 4.8,
+    "downloads": 13800000,
+    "ratings": [
+      { "name": "1 star", "count": 260 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 1900 },
+      { "name": "5 star", "count": 5240 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1581092334505-c52239db0f8b",
+    "title": "CodeNest: Learn Programming",
+    "companyName": "DevVerse",
+    "id": 20,
+    "description": "CodeNest: Learn Programming helps beginners and developers enhance coding skills through structured interactive lessons. Covering HTML, CSS, JavaScript, Python, and React, it turns complex programming concepts into step-by-step exercises. Each lesson includes quizzes, coding challenges, and live previews, allowing instant feedback. The app’s gamified approach—badges, streaks, and leaderboards—keeps motivation high. CodeNest also features real-world projects where you can apply what you’ve learned. Its clean interface and syntax highlighting make the learning environment professional and comfortable. You can track progress, bookmark lessons, and even share code snippets with peers. Whether you’re learning for a career, freelancing, or fun, CodeNest builds your confidence from basics to advanced logic. It’s like having a personal coding mentor in your pocket, available anytime to turn curiosity into skill and ideas into reality.",
+    "size": 120,
+    "reviews": 9100,
+    "ratingAvg": 4.9,
+    "downloads": 18500000,
+    "ratings": [
+      { "name": "1 star", "count": 310 },
+      { "name": "2 star", "count": 420 },
+      { "name": "3 star", "count": 740 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 5830 }
+    ]
+  }
+
+
+
+
+]
