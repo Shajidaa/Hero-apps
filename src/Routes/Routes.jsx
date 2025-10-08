@@ -5,31 +5,31 @@ import Apps from "../Pages/Home/Apps/Apps";
 import AppDetails from "../Pages/Home/AppDetails/AppDetails";
 import InstallationPage from "../Pages/Home/Installation/InstallationPage";
 
-
 //name export
-const router=createBrowserRouter([
-{
-    path:'/',
-    
-    Component:MainLayouts,
-    children:[{
-        index: true ,
-        Component:Home,
-        },
-        {
-            path:"/apps",
-            Component: Apps
-        },{
-            path:"/apps/:id",
-            Component: AppDetails
-        },{
-            path:"/installation",
-            Component:InstallationPage
-        }
-        
-    
-    
-    ]
-}
-])
+const router = createBrowserRouter([
+  {
+    path: "/",
+
+    Component: MainLayouts,
+    children: [
+      {
+        index: true,
+        Component: Home,
+      },
+      {
+        path: "/apps",
+        Component: Apps,
+      },
+      {
+        path: "/apps/:id",
+        Component: AppDetails,
+      },
+      {
+        path: "/installation",
+
+        Component: InstallationPage,
+      },
+    ],
+  },
+]);
 export default router;

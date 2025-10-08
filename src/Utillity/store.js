@@ -1,5 +1,5 @@
-const getStoreApp = (key) => {
-  const storeApp = JSON.parse(localStorage.getItem(key));
+const getStoreApp = () => {
+  const storeApp = JSON.parse(localStorage.getItem("install"));
   if (storeApp) {
     return storeApp;
   } else {
@@ -12,6 +12,7 @@ const addToStore = (key, id) => {
   if (storedAppData.includes(id)) {
     alert(" already add");
   } else {
+    // const updateInstalList=[...storedAppData,]
     storedAppData.push(id);
     const data = JSON.stringify(storedAppData);
     localStorage.setItem(key, data);
