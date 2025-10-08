@@ -12,16 +12,23 @@ const Home = () => {
     return (
         <div>
             <div>
-        <h1>Trending Apps</h1>
-           <p>Explore All Trending Apps on the 
+        <h1 className='font-bold text-3xl text-center md:mt-20 mt-10 md:text-5xl text-[#001931]  '>Trending Apps</h1>
+           <p className='text-[#627382] text-xl font-normal lg:leading-20 md:leading-15 leading-10
+            text-center'>Explore All Trending Apps on the 
             Market developed by us.</p>
             </div>
-           <div>
+           <div className='grid grid-cols-1 gap-4 mx-auto md:grid-cols-3 lg:grid-cols-4 px-4 lg:px-0 md:px-4'>
             {
                 trendingApps.map(app=>
-                <AppCard key={app.id} app={app} >
+                <AppCard app={app} >
                  </AppCard>)
             }
+           </div>
+           <div className='flex justify-center items-center  '>
+           <button  className=" btn text-white  md:my-10 my-5
+     bg-linear-to-r from-[#632EE3] to-[#9F62F2]
+      font-bold text-base  ">Show All</button>
+
            </div>
         </div> 
     );

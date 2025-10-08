@@ -44,7 +44,8 @@ const Navbar = () => {
 
     <Link to='https://github.com/Shajidaa'
      target='blank' className=" btn text-white 
-     bg-linear-to-r from-[#632EE3] to-[#9F62F2] font-bold text-base  "> <span> <img src={gitHub} alt="" /></span> Contribute</Link>
+     bg-linear-to-r from-[#632EE3] to-[#9F62F2]
+      font-bold text-base  "> <span> <img src={gitHub} alt="" /></span> Contribute</Link>
   </div>
 </div>
     );
