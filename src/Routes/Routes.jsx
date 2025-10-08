@@ -10,6 +10,7 @@ import InstallationPage from "../Pages/Home/Installation/InstallationPage";
 const router=createBrowserRouter([
 {
     path:'/',
+    
     Component:MainLayouts,
     children:[{
         index: true ,
@@ -19,7 +20,7 @@ const router=createBrowserRouter([
             path:"/apps",
             Component: Apps
         },{
-            path:"/appDetails",
+            path:"/apps/:id",
             Component: AppDetails
         },{
             path:"/installation",

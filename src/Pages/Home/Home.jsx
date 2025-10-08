@@ -20,7 +20,7 @@ const Home = () => {
            <div className='grid grid-cols-1 gap-4 mx-auto md:grid-cols-3 lg:grid-cols-4 px-4 lg:px-0 md:px-4'>
             {
                 trendingApps.map(app=>
-                <AppCard app={app} >
+                <AppCard key={app.id} app={app} >
                  </AppCard>)
             }
            </div>
