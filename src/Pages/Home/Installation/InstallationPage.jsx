@@ -1,36 +1,23 @@
-import React, { useEffect, useState } from "react";
-import { deleteStoreApp, getStoreApp } from "../../../Utillity/store";
-import useApps from "../../../Hooks/Hooks";
+import React, { useContext, useState } from "react";
+
 import Container from "../../../Components/Header/Container/Container";
 import Download from "../../../assets/icon-downloads.png";
 import rat from "../../../assets/icon-ratings.png";
+import AppContext from "../../../context/AppContext";
 
 const InstallationPage = () => {
-  const [install, setInstall] = useState(() => getStoreApp());
   const [sort, setSort] = useState("");
-  const { apps } = useApps();
-
-  const [installedApps, setInstallApps] = useState([]);
-
-  useEffect(() => {
-    setInstallApps(apps.filter((app) => install.includes(app.id.toString())));
-  }, [apps, install]);
+  const { installedApps, handleDelete, setInstallApps } =
+    useContext(AppContext);
 
   const handleSort = (type) => {
     setSort(type);
     const sortedApps = [...installedApps].sort((a, b) => {
-      if (type === "low") return a.size - b.size;
-      if (type === "high") return b.size - a.size;
+      if (type === "low") return a.downloads - b.downloads;
+      if (type === "high") return b.downloads - a.downloads;
       return 0;
     });
     setInstallApps(sortedApps);
-  };
-  if (!installedApps.length) return <p>no app install </p>;
-  const handleDelete = (id) => {
-    deleteStoreApp("install", id);
-    const update = install.filter((itemId) => itemId !== id);
-    setInstall(update);
-    setInstallApps(installedApps.filter((app) => app.id !== id));
   };
 
   return (
@@ -50,7 +37,7 @@ const InstallationPage = () => {
             ({installedApps.length})Apps Found
           </p>
           <details className="dropdown">
-            <summary className="btn m-1">Sort by size</summary>
+            <summary className="btn m-1">Sort by downloads</summary>
             <ul
               className="menu dropdown-content bg-base-100
              rounded-box z-1  p-2 shadow-sm"

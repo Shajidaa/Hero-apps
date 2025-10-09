@@ -3,6 +3,7 @@ import useApps from "../../../Hooks/Hooks";
 import AppCard from "../../../Components/Header/AppCard/AppCard";
 import ErrorApp from "../ErrorPages/ErrorApp";
 import Container from "../../../Components/Header/Container/Container";
+import Spinner from "../../../Components/Header/Spinner/Spinner";
 
 const Apps = () => {
   const { loading, error, apps } = useApps();
@@ -13,6 +14,7 @@ const Apps = () => {
     ? apps.filter((app) => app.title.toLowerCase().includes(term))
     : apps;
   const noResults = !loading && !error && searchApps.length === 0;
+
   return (
     <Container>
       <div>
@@ -66,7 +68,7 @@ const Apps = () => {
         ) : (
           <div className="grid grid-cols-1 gap-4 mx-auto md:grid-cols-3 lg:grid-cols-4 px-4 lg:px-2 md:px-4">
             {loading ? (
-              <p>loading........</p>
+              <Spinner></Spinner>
             ) : (
               searchApps.map((app) => (
                 <AppCard key={app.id} app={app}></AppCard>

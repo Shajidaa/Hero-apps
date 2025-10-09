@@ -18,18 +18,22 @@ import {
 } from "recharts";
 import Container from "../../../Components/Header/Container/Container";
 
-import AppBtn from "../../../Hooks/Button/Button";
 import ErrorApp from "../ErrorPages/ErrorApp";
+import Spinner from "../../../Components/Header/Spinner/Spinner";
+import AppContext from "../../../context/AppContext";
+import { useContext } from "react";
+import { toast, ToastContainer } from "react-toastify";
 
 const AppDetails = () => {
   const { loading, error, apps } = useApps();
+  const { setInstall, install } = useContext(AppContext);
 
   const { id } = useParams();
   // console.log(Number(id));
   const appId = Number(id);
 
   if (loading) {
-    return <p>loading..........</p>;
+    return <Spinner></Spinner>;
   }
   if (!appId) {
     return <ErrorApp></ErrorApp>;
@@ -50,11 +54,10 @@ const AppDetails = () => {
   } = app || [];
   const reverseRatings = [...ratings].reverse();
   // console.log(reverseRatings);
-
+  const isInstalled = install.some((appId) => appId === id);
   const handleInstallAdd = (id) => {
     addToStore("install", id);
-
-    // toast.success("App install successfully!");
+    setInstall([...install, id]);
   };
 
   return (
@@ -111,10 +114,11 @@ const AppDetails = () => {
             onClick={() => {
               handleInstallAdd(id);
             }}
+            disabled={isInstalled}
             className={`btn font-medium text-xl text-white  rounded
               bg-[#00D390]`}
           >
-            Install Now ( ${size} MB)
+            {isInstalled ? "Installed" : `Install Now ( ${size} MB) `}
           </button>
         </div>
       </div>
@@ -166,6 +170,7 @@ const AppDetails = () => {
           {description}
         </p>
       </div>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };

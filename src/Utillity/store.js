@@ -12,11 +12,9 @@ const getStoreApp = (key = "install") => {
 const addToStore = (key = "install", id) => {
   const storedAppData = getStoreApp(key);
   if (storedAppData.includes(id)) {
-    toast(" already add");
+    toast.success("App install successfully!");
   } else {
     const updateInstalList = [...storedAppData, id];
-    toast("it add");
-
     const data = JSON.stringify(updateInstalList);
     localStorage.setItem(key, data);
     toast.success("Added Successfully!");
@@ -24,11 +22,12 @@ const addToStore = (key = "install", id) => {
 };
 const deleteStoreApp = (key = "install", id) => {
   const storeAppData = getStoreApp(key);
-  const updateList = storeAppData.filter((itemId) => itemId !== id);
-  // console.log(updateList);
+
+  const updateList = storeAppData.filter((itemId) => itemId != id);
+
   localStorage.setItem(key, JSON.stringify(updateList));
-  toast.info("Remove Successfully!");
 };
+
 const isAppInstalled = (key = "install", id) => {
   const storedAppData = getStoreApp(key);
   return storedAppData.includes(id);

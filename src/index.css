@@ -61,13 +61,14 @@
     width: 100%;
 }
 
-/* .contribute {
+a.active .text {
+    font-size: 1rem;
     background-image: linear-gradient(to right, #632EE3, #9F62F2);
-    color: white;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    /* text-decoration: underline; */
+    /* border-bottom: 1px solid; */
+    position: relative;
 }
-
-.contribute::before {
-    content: url(./assets/fi_2111432.png);
-    position: center;
-
-} */
