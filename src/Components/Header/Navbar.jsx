@@ -4,9 +4,6 @@ import logo from "../../assets/logo.png";
 import gitHub from "../../assets/fi_2111432.png";
 import Container from "./Container/Container";
 const Navbar = () => {
-  // const links=
-  //     {<li>ld</li>}
-
   return (
     <div
       className=" bg-white stroke-1 
@@ -85,7 +82,7 @@ const Navbar = () => {
                 <li className="text  ">Home</li>
               </NavLink>
               <NavLink to="/apps">
-                <li className="text ">Apps</li>
+                <li className="text">Apps</li>
               </NavLink>
               <NavLink to="/installation">
                 <li className="text ">Installation</li>

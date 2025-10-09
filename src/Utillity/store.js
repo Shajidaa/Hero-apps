@@ -1,3 +1,5 @@
+import { toast } from "react-toastify";
+
 const getStoreApp = () => {
   const storeApp = JSON.parse(localStorage.getItem("install"));
   if (storeApp) {
@@ -10,9 +12,10 @@ const getStoreApp = () => {
 const addToStore = (key, id) => {
   const storedAppData = getStoreApp(key);
   if (storedAppData.includes(id)) {
-    alert(" already add");
+    toast(" already add");
   } else {
     // const updateInstalList=[...storedAppData,]
+    toast("it add");
     storedAppData.push(id);
     const data = JSON.stringify(storedAppData);
     localStorage.setItem(key, data);
