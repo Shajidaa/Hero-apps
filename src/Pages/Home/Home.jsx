@@ -3,6 +3,7 @@ import React from "react";
 import useApps from "../../Hooks/Hooks";
 import AppCard from "../../Components/Header/AppCard/AppCard";
 import { Link } from "react-router";
+import Container from "../../Components/Header/Container/Container";
 
 const Home = () => {
   const { loading, error, apps } = useApps();
@@ -11,7 +12,7 @@ const Home = () => {
   // console.log(trendingApps);
 
   return (
-    <div>
+    <Container>
       <div>
         <h1 className="font-bold text-3xl text-center md:mt-20 mt-10 md:text-5xl text-[#001931]  ">
           Trending Apps
@@ -38,7 +39,7 @@ const Home = () => {
           Show All
         </Link>
       </div>
-    </div>
+    </Container>
   );
 };
 

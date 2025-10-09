@@ -5,20 +5,20 @@ import Container from "../Components/Header/Container/Container";
 import { isRouteErrorResponse, useRouteError } from "react-router";
 import ErrorPage from "../Pages/Home/ErrorPages/ErrorPage";
 import Footer from "../Components/Header/Footer/Footer";
+import Banner from "../Components/Header/Banner/Banner";
 
 const MainLayouts = () => {
   const error = useRouteError();
   return (
     <div>
-      <Container>
-        <Navbar></Navbar>
+      <Navbar></Navbar>
+      <Banner></Banner>
 
-        {isRouteErrorResponse(error) ? (
-          <ErrorPage></ErrorPage>
-        ) : (
-          <Outlet></Outlet>
-        )}
-      </Container>
+      {isRouteErrorResponse(error) ? (
+        <ErrorPage></ErrorPage>
+      ) : (
+        <Outlet></Outlet>
+      )}
       <Footer></Footer>
     </div>
   );

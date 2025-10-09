@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import useApps from "../../../Hooks/Hooks";
 import AppCard from "../../../Components/Header/AppCard/AppCard";
 import ErrorApp from "../ErrorPages/ErrorApp";
+import Container from "../../../Components/Header/Container/Container";
 
 const Apps = () => {
   const { loading, error, apps } = useApps();
@@ -13,7 +14,7 @@ const Apps = () => {
     : apps;
 
   return (
-    <div>
+    <Container>
       {searchApps.length > 0 ? (
         <div>
           <div>
@@ -72,7 +73,7 @@ const Apps = () => {
       ) : (
         <ErrorApp></ErrorApp>
       )}
-    </div>
+    </Container>
   );
 };
 
