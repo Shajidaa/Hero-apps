@@ -45,14 +45,45 @@ const Banner = () => {
               App Store
             </Link>
           </div>
-          <img className="p-3" src={hero} alt="" />
+          <img className="pt-3 pl-3 pr-3 pb-0" src={hero} alt="" />
         </div>
       </Container>
       <div
         className=" text-white 
      bg-linear-to-r from-[#632EE3] to-[#9F62F2]"
       >
-        <h1>Trusted by Millions, Built for You</h1>
+        {" "}
+        <Container>
+          <div className="md:p-12 p-5">
+            <h1 className="text-center font-bold md:text-4xl text-2xl  ">
+              Trusted by Millions, Built for You
+            </h1>
+            <div className="grid md:grid-cols-3 items-center gap-6 grid-cols-1 pb-10 md:pd-20  pt-10">
+              <div className="flex flex-col justify-center items-center">
+                <h1 className="text-base font-normal">Total Downloads</h1>
+                <p className=" text-4xl md:text-6xl font-extrabold">29.6M</p>
+                <p className="text-base font-normal text-center">
+                  {" "}
+                  21% more than last month
+                </p>
+              </div>
+              <div className="flex flex-col justify-center items-center">
+                <h1 className="text-base font-normal">Total Reviews</h1>
+                <p className=" text-4xl md:text-6xl font-extrabold">906K</p>
+                <p className="text-base font-normal text-center">
+                  46% more than last month
+                </p>
+              </div>
+              <div className="flex flex-col justify-center items-center">
+                <h1 className="text-base font-normal">Active Apps</h1>
+                <p className=" text-4xl md:text-6xl font-extrabold">132+</p>
+                <p className="text-base font-normal text-center">
+                  31 more will Launch
+                </p>
+              </div>
+            </div>
+          </div>
+        </Container>
       </div>
     </div>
   );

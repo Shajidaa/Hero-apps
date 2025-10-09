@@ -1,7 +1,7 @@
 import { toast } from "react-toastify";
 
-const getStoreApp = () => {
-  const storeApp = JSON.parse(localStorage.getItem("install"));
+const getStoreApp = (key = "install") => {
+  const storeApp = JSON.parse(localStorage.getItem(key));
   if (storeApp) {
     return storeApp;
   } else {
@@ -9,23 +9,28 @@ const getStoreApp = () => {
   }
 };
 
-const addToStore = (key, id) => {
+const addToStore = (key = "install", id) => {
   const storedAppData = getStoreApp(key);
   if (storedAppData.includes(id)) {
     toast(" already add");
   } else {
-    // const updateInstalList=[...storedAppData,]
+    const updateInstalList = [...storedAppData, id];
     toast("it add");
-    storedAppData.push(id);
-    const data = JSON.stringify(storedAppData);
+
+    const data = JSON.stringify(updateInstalList);
     localStorage.setItem(key, data);
+    toast.success("Added Successfully!");
   }
 };
-const deleteStoreApp = (key, id) => {
+const deleteStoreApp = (key = "install", id) => {
   const storeAppData = getStoreApp(key);
-  const updateList = storeAppData.filter((p) => p.id !== id);
-  console.log(updateList);
+  const updateList = storeAppData.filter((itemId) => itemId !== id);
+  // console.log(updateList);
   localStorage.setItem(key, JSON.stringify(updateList));
+  toast.info("Remove Successfully!");
 };
-
-export { addToStore, getStoreApp, deleteStoreApp };
+const isAppInstalled = (key = "install", id) => {
+  const storedAppData = getStoreApp(key);
+  return storedAppData.includes(id);
+};
+export { addToStore, getStoreApp, deleteStoreApp, isAppInstalled };

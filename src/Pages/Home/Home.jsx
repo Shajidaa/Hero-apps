@@ -30,7 +30,7 @@ const Home = () => {
         {loading ? (
           <p>loading,.........</p>
         ) : (
-          <div className="grid grid-cols-1 gap-4 mx-auto md:grid-cols-3 lg:grid-cols-4 px-4 lg:px-0 md:px-4">
+          <div className="grid grid-cols-1 gap-4 mx-auto md:grid-cols-3 lg:grid-cols-4 px-4 lg:px-2 md:px-4">
             {trendingApps.map((app) => (
               <AppCard key={app.id} app={app}></AppCard>
             ))}

@@ -28,7 +28,7 @@ const Apps = () => {
           </p>
         </div>
         <div className="flex justify-between items-center mb-4 px-4 lg:px-0 md:px-4">
-          <h1 className="font-semibold text-2xl text-[#001931] underline ">
+          <h1 className="font-semibold text-2xl text-[#001931]">
             (<span>{searchApps.length}</span>) Apps Found{" "}
           </h1>
           <div>
@@ -64,7 +64,7 @@ const Apps = () => {
         ) : noResults ? (
           <ErrorApp></ErrorApp>
         ) : (
-          <div className="grid grid-cols-1 gap-4 mx-auto md:grid-cols-3 lg:grid-cols-4 px-4 lg:px-0 md:px-4">
+          <div className="grid grid-cols-1 gap-4 mx-auto md:grid-cols-3 lg:grid-cols-4 px-4 lg:px-2 md:px-4">
             {loading ? (
               <p>loading........</p>
             ) : (
