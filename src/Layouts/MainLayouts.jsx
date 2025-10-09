@@ -7,6 +7,7 @@ import Footer from "../Components/Header/Footer/Footer";
 import AppContext from "../context/AppContext";
 import { deleteStoreApp, getStoreApp } from "../Utillity/store";
 import useApps from "../Hooks/Hooks";
+import { toast } from "react-toastify";
 
 const MainLayouts = () => {
   const error = useRouteError();
@@ -22,9 +23,10 @@ const MainLayouts = () => {
 
   const handleDelete = (id) => {
     deleteStoreApp("install", id);
-
-    setInstallApps(installedApps.filter((app) => app.id !== id));
-    console.log(installedApps);
+    setInstall((prev) => prev.filter((itemId) => itemId !== String(id)));
+    setInstallApps((prev) => prev.filter((app) => app.id !== id));
+    // console.log(installedApps);
+    toast.info("App uninstalled !");
   };
 
   return (

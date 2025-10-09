@@ -22,7 +22,6 @@ import ErrorApp from "../ErrorPages/ErrorApp";
 import Spinner from "../../../Components/Header/Spinner/Spinner";
 import AppContext from "../../../context/AppContext";
 import { useContext } from "react";
-import { toast, ToastContainer } from "react-toastify";
 
 const AppDetails = () => {
   const { loading, error, apps } = useApps();
@@ -54,11 +53,13 @@ const AppDetails = () => {
   } = app || [];
   const reverseRatings = [...ratings].reverse();
   // console.log(reverseRatings);
-  const isInstalled = install.some((appId) => appId === id);
+
   const handleInstallAdd = (id) => {
     addToStore("install", id);
     setInstall([...install, id]);
+    // toast.success("App install successfully!");
   };
+  const isInstalled = install.some((appId) => appId === id);
 
   return (
     <div className=" mt-20 container mx-auto lg:p-2 p-5 ">
@@ -118,7 +119,7 @@ const AppDetails = () => {
             className={`btn font-medium text-xl text-white  rounded
               bg-[#00D390]`}
           >
-            {isInstalled ? "Installed" : `Install Now ( ${size} MB) `}
+            Install Now ( ${size} MB)
           </button>
         </div>
       </div>
@@ -170,7 +171,6 @@ const AppDetails = () => {
           {description}
         </p>
       </div>
-      <ToastContainer></ToastContainer>
     </div>
   );
 };
