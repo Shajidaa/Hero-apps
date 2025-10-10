@@ -5,12 +5,13 @@ const CustomTooltip = ({ active, payload, label }) => {
     const data = payload[0].payload;
     return (
       <div
-        className="max-w-full md:w-auto "
+        className="w-auto "
         style={{
           backgroundColor: "#FF88",
           padding: "10px",
           border: "none",
           borderRadius: "4px",
+          width: "100%",
         }}
       >
         <p className="flex flex-row justify-center items-center gap-1">
