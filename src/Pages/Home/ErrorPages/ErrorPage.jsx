@@ -8,7 +8,7 @@ const ErrorPage = () => {
     <div>
       <Navbar></Navbar>
       <div className="col-span-full grid-cols-1">
-        <div className="flex  flex-col justify-center items-center   ">
+        <div className="flex  flex-col justify-center items-center min-h-dvh   ">
           <div>
             <img src={er} alt="" />
           </div>
