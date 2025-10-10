@@ -1,16 +1,14 @@
-import React from "react";
-
 import useApps from "../../Hooks/Hooks";
 import AppCard from "../../Components/Header/AppCard/AppCard";
 import { Link } from "react-router";
 import Container from "../../Components/Header/Container/Container";
 import Banner from "../../Components/Header/Banner/Banner";
+import { PropagateLoader } from "react-spinners";
 
 const Home = () => {
   const { loading, apps } = useApps();
-  // console.log({loading,error,apps});
+
   const trendingApps = apps.slice(0, 8);
-  // console.log(trendingApps);
 
   return (
     <div>
@@ -28,7 +26,9 @@ const Home = () => {
           </p>
         </div>
         {loading ? (
-          <p>loading,.........</p>
+          <div className="flex justify-center items-center min-h-screen">
+            <PropagateLoader color="#8e0cae"></PropagateLoader>;
+          </div>
         ) : (
           <div className="grid grid-cols-1 gap-4 mx-auto md:grid-cols-3 lg:grid-cols-4 px-4 lg:px-2 md:px-4">
             {trendingApps.map((app) => (
@@ -41,8 +41,8 @@ const Home = () => {
           <Link
             to="/apps"
             className=" btn text-white  md:my-10 my-5
-     bg-linear-to-r from-[#632EE3] to-[#9F62F2]
-      font-bold text-base  "
+            bg-linear-to-r from-[#632EE3] to-[#9F62F2]
+           font-bold text-base  "
           >
             Show All
           </Link>

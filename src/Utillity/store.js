@@ -1,12 +1,6 @@
-import { toast } from "react-toastify";
-
 const getStoreApp = (key = "install") => {
   const storeApp = JSON.parse(localStorage.getItem(key));
-  // if (storeApp) {
-  //   return storeApp;
-  // } else {
-  //   return [];
-  // }
+
   return Array.isArray(storeApp) ? storeApp : [];
 };
 
@@ -15,12 +9,11 @@ const addToStore = (key = "install", id) => {
   const strId = String(id);
 
   if (storedAppData.includes(strId)) {
-    // toast.info("App install successfully!");
+    // toast.info("App install !");
   } else {
     const updateInstalList = [...storedAppData, id];
     const data = JSON.stringify(updateInstalList);
     localStorage.setItem(key, data);
-    toast.success("Added Successfully!");
   }
 };
 

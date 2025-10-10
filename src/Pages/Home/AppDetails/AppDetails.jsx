@@ -10,7 +10,7 @@ import ErrorApp from "../ErrorPages/ErrorApp";
 import Spinner from "../../../Components/Header/Spinner/Spinner";
 import AppContext from "../../../context/AppContext";
 import { useContext } from "react";
-import { ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import {
   Bar,
   XAxis,
@@ -52,6 +52,11 @@ const AppDetails = () => {
   const handleInstallAdd = (id) => {
     addToStore("install", id);
     setInstall([...install, id]);
+    toast.success("App install successfully!"),
+      {
+        toastId: "install-success",
+        autoClose: 300,
+      };
   };
   const isInstalled = install.some((appId) => appId === id);
 
@@ -124,36 +129,32 @@ const AppDetails = () => {
       <hr className="text-gray-400 my-8" />
       <div className="h-[400px] w-full">
         {ratings && ratings.length > 0 ? (
-          <ResponsiveContainer width="100%" height="100%">
-            <ComposedChart
-              layout="vertical"
-              width={500}
-              height={400}
-              data={reverseRatings}
-            >
-              <CartesianGrid stroke="#f5f5f5" />
-              <XAxis
-                axisLine={false}
-                strikethroughThickness={false}
-                type="number"
-              />
-              <YAxis
-                axisLine={false}
-                strikethroughThickness={false}
-                dataKey="name"
-                type="category"
-              />
-              <Tooltip />
-              <Legend />
+          <div className="w-full h-full">
+            <ResponsiveContainer width="100%" height="100%">
+              <ComposedChart layout="vertical" data={reverseRatings}>
+                <CartesianGrid stroke="#f5f5f5" />
+                <XAxis
+                  axisLine={false}
+                  strikethroughThickness={false}
+                  type="number"
+                />
+                <YAxis
+                  axisLine={false}
+                  strikethroughThickness={false}
+                  dataKey="name"
+                  type="category"
+                />
+                <Tooltip />
 
-              <Bar
-                axisLine={false}
-                dataKey="count"
-                barSize={20}
-                fill="#FF8811"
-              />
-            </ComposedChart>
-          </ResponsiveContainer>
+                <Bar
+                  axisLine={false}
+                  dataKey="count"
+                  barSize={20}
+                  fill="#FF8811"
+                />
+              </ComposedChart>
+            </ResponsiveContainer>
+          </div>
         ) : (
           <p>no chart found</p>
         )}
@@ -164,7 +165,6 @@ const AppDetails = () => {
           {description}
         </p>
       </div>
-      <ToastContainer></ToastContainer>
     </div>
   );
 };

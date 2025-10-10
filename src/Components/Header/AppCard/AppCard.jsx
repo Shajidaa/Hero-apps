@@ -7,7 +7,7 @@ const AppCard = (app) => {
 
   return (
     <Link
-      to={`/apps/${id}`}
+      to={`/app-details/${id}`}
       className="bg-white rounded-2xl shadow w-full  md:max-w-[384px]  p-4  hover:scale-105 transition duration-150  "
     >
       <div className="flex flex-col justify-center  items-center">
@@ -22,9 +22,9 @@ const AppCard = (app) => {
           {downloads}M
         </p>
         <p className="text-[#FF8811] bg-[#FFF0E1]  rounded flex justify-center items-center gap-2 p-1 ">
-          <div className="w-4 h-4 ">
+          <span className="w-4 h-4 ">
             <img className="w-full h-full object-contain" src={star} alt="" />
-          </div>{" "}
+          </span>{" "}
           {ratingAvg}
         </p>
       </div>

@@ -66,7 +66,7 @@ const MainLayouts = () => {
         </AppContext.Provider>
       )}
       <Footer></Footer>
-      <ToastContainer></ToastContainer>
+      <ToastContainer autoClose={800}></ToastContainer>
     </div>
   );
 };

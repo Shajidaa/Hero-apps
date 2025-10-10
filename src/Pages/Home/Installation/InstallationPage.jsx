@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 
 import Container from "../../../Components/Header/Container/Container";
 import Download from "../../../assets/icon-downloads.png";
@@ -8,6 +8,7 @@ import NotInstalled from "../../../Components/Header/NotInstalled/NotInstalled";
 
 const InstallationPage = () => {
   const [sort, setSort] = useState("");
+
   const { installedApps, handleDelete, setInstallApps } =
     useContext(AppContext);
 
@@ -58,7 +59,7 @@ const InstallationPage = () => {
             {installedApps.map((app) => (
               <li
                 key={app.id}
-                className=" list-row p-2  shadow flex md:flex-row flex-col  bg-white gap-3 rounded justify-between items-center mb-2 "
+                className=" list-row p-2  shadow flex flex-wrap  bg-white gap-3 rounded justify-between items-center mb-2 "
               >
                 <div className=" flex flex-row  gap-3">
                   <img
