@@ -6,6 +6,11 @@ import Download from "../../../assets/icon-downloads.png";
 import rat from "../../../assets/icon-ratings.png";
 import like from "../../../assets/Vector (2).png";
 
+import ErrorApp from "../ErrorPages/ErrorApp";
+import Spinner from "../../../Components/Header/Spinner/Spinner";
+import AppContext from "../../../context/AppContext";
+import { useContext } from "react";
+import { ToastContainer } from "react-toastify";
 import {
   Bar,
   XAxis,
@@ -16,19 +21,11 @@ import {
   ResponsiveContainer,
   ComposedChart,
 } from "recharts";
-import Container from "../../../Components/Header/Container/Container";
-
-import ErrorApp from "../ErrorPages/ErrorApp";
-import Spinner from "../../../Components/Header/Spinner/Spinner";
-import AppContext from "../../../context/AppContext";
-import { useContext } from "react";
-
 const AppDetails = () => {
-  const { loading, error, apps } = useApps();
+  const { loading, apps } = useApps();
   const { setInstall, install } = useContext(AppContext);
 
   const { id } = useParams();
-  // console.log(Number(id));
   const appId = Number(id);
 
   if (loading) {
@@ -38,7 +35,6 @@ const AppDetails = () => {
     return <ErrorApp></ErrorApp>;
   }
   const app = apps.find((singleApp) => singleApp.id === appId);
-  //  console.log(app);
 
   const {
     title,
@@ -52,12 +48,10 @@ const AppDetails = () => {
     ratings,
   } = app || [];
   const reverseRatings = [...ratings].reverse();
-  // console.log(reverseRatings);
 
   const handleInstallAdd = (id) => {
     addToStore("install", id);
     setInstall([...install, id]);
-    // toast.success("App install successfully!");
   };
   const isInstalled = install.some((appId) => appId === id);
 
@@ -119,58 +113,59 @@ const AppDetails = () => {
             className={`btn font-medium text-xl text-white  rounded
               bg-[#00D390]`}
           >
-            Install Now ( ${size} MB)
+            {isInstalled ? "Installed" : `Install Now (${size}MB)`}
           </button>
         </div>
       </div>
       <hr className="text-gray-400 my-8" />
       <div>
         <h1 className="text-[#001931]  font-semibold text-2xl">Ratings</h1>
-        <div className="h-[400px] w-full">
-          {ratings && ratings.length > 0 ? (
-            <ResponsiveContainer width="100%" height="100%">
-              <ComposedChart
-                layout="vertical"
-                width={500}
-                height={400}
-                data={reverseRatings}
-              >
-                <CartesianGrid stroke="#f5f5f5" />
-                <XAxis
-                  axisLine={false}
-                  strikethroughThickness={false}
-                  type="number"
-                />
-                <YAxis
-                  axisLine={false}
-                  strikethroughThickness={false}
-                  dataKey="name"
-                  type="category"
-                />
-                <Tooltip />
-                <Legend />
-
-                <Bar
-                  axisLine={false}
-                  dataKey="count"
-                  barSize={20}
-                  fill="#FF8811"
-                />
-              </ComposedChart>
-            </ResponsiveContainer>
-          ) : (
-            <p>no chart found</p>
-          )}
-        </div>
       </div>
       <hr className="text-gray-400 my-8" />
+      <div className="h-[400px] w-full">
+        {ratings && ratings.length > 0 ? (
+          <ResponsiveContainer width="100%" height="100%">
+            <ComposedChart
+              layout="vertical"
+              width={500}
+              height={400}
+              data={reverseRatings}
+            >
+              <CartesianGrid stroke="#f5f5f5" />
+              <XAxis
+                axisLine={false}
+                strikethroughThickness={false}
+                type="number"
+              />
+              <YAxis
+                axisLine={false}
+                strikethroughThickness={false}
+                dataKey="name"
+                type="category"
+              />
+              <Tooltip />
+              <Legend />
 
+              <Bar
+                axisLine={false}
+                dataKey="count"
+                barSize={20}
+                fill="#FF8811"
+              />
+            </ComposedChart>
+          </ResponsiveContainer>
+        ) : (
+          <p>no chart found</p>
+        )}
+      </div>{" "}
+      */
       <div>
         <h1 className="text-[#001931]  font-semibold text-2xl">Description</h1>
         <p className="text-xl font-normal text-[#627382] md:mt-6 mt-3 md:pb-20 pb-10  ">
           {description}
         </p>
       </div>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };

@@ -15,7 +15,7 @@ const addToStore = (key = "install", id) => {
   const strId = String(id);
 
   if (storedAppData.includes(strId)) {
-    toast.info("App install successfully!");
+    // toast.info("App install successfully!");
   } else {
     const updateInstalList = [...storedAppData, id];
     const data = JSON.stringify(updateInstalList);
@@ -23,9 +23,11 @@ const addToStore = (key = "install", id) => {
     toast.success("Added Successfully!");
   }
 };
+
 const deleteStoreApp = (key = "install", id) => {
   const storeAppData = getStoreApp(key);
   const strId = String(id);
+
   const updateList = storeAppData.filter((itemId) => itemId !== strId);
 
   localStorage.setItem(key, JSON.stringify(updateList));
