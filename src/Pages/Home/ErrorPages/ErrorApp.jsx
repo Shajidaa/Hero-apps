@@ -1,7 +1,5 @@
-import React from "react";
-
 import img from "../../../assets/App-Error.png";
-import { Link, Links } from "react-router";
+import { Link } from "react-router";
 const ErrorApp = () => {
   return (
     <div className="flex  flex-col justify-center items-center  min-h-dvh  ">

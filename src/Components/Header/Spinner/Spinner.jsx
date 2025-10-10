@@ -1,5 +1,5 @@
-import React from "react";
 import logo from "../../../assets/logo.png";
+
 const Spinner = () => {
   <div className="col-span-full">
     <div className="flex flex-row justify-center items-center min-h-dvh  ">
