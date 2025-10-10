@@ -15,6 +15,15 @@ const Navbar = () => {
          "
         >
           <div className="navbar-start">
+            <Link
+              to="/"
+              className=" flex gap-1 flex-row justify-center items-center text-xl"
+            >
+              <span>
+                <img className="size-10" src={logo} alt="" />
+              </span>
+              <span className="font-bold text-base gradient-text">HERO.IO</span>
+            </Link>
             <div className="dropdown">
               <div
                 tabIndex={0}
@@ -39,7 +48,7 @@ const Navbar = () => {
               </div>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3  p-2 shadow"
               >
                 <NavLink to="/">
                   <li className="text">Home</li>
@@ -50,31 +59,8 @@ const Navbar = () => {
                 <NavLink to="/installation">
                   <li className="text ">Installation</li>
                 </NavLink>
-
-                <Link
-                  to="https://github.com/Shajidaa"
-                  target="blank"
-                  className=" btn text-white 
-     bg-linear-to-r from-[#632EE3] to-[#9F62F2] font-bold text-base  "
-                >
-                  {" "}
-                  <span>
-                    {" "}
-                    <img src={gitHub} alt="" />
-                  </span>{" "}
-                  Contribute
-                </Link>
               </ul>
             </div>
-            <Link
-              to="/"
-              className=" flex gap-1 flex-row justify-center items-center text-xl"
-            >
-              <span>
-                <img className="size-10" src={logo} alt="" />
-              </span>
-              <span className="font-bold text-base gradient-text">HERO.IO</span>
-            </Link>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1 ">
@@ -89,22 +75,21 @@ const Navbar = () => {
               </NavLink>
             </ul>
           </div>
-          <div className="navbar-end md:flex hidden">
-            <Link
-              to="https://github.com/Shajidaa"
-              target="blank"
-              className=" btn text-white 
+          <div className="navbar-end md:flex hidden"></div>
+          <Link
+            to="https://github.com/Shajidaa"
+            target="blank"
+            className=" btn text-white 
      bg-linear-to-r from-[#632EE3] to-[#9F62F2]
       font-bold text-base  "
-            >
+          >
+            {" "}
+            <span>
               {" "}
-              <span>
-                {" "}
-                <img src={gitHub} alt="" />
-              </span>{" "}
-              Contribute
-            </Link>
-          </div>
+              <img src={gitHub} alt="" />
+            </span>{" "}
+            Contribute
+          </Link>
         </div>
       </Container>
     </div>

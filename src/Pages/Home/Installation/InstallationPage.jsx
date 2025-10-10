@@ -15,8 +15,8 @@ const InstallationPage = () => {
   const handleSort = (type) => {
     setSort(type);
     const sortedApps = [...installedApps].sort((a, b) => {
-      if (type === "low") return a.downloads - b.downloads;
-      if (type === "high") return b.downloads - a.downloads;
+      if (type === "asc") return a.downloads - b.downloads;
+      if (type === "desc") return b.downloads - a.downloads;
       return 0;
     });
     setInstallApps(sortedApps);
@@ -38,21 +38,18 @@ const InstallationPage = () => {
           <p className="font-semibold text-2xl text-[#001931]">
             ({installedApps.length})Apps Found
           </p>
-          <details className="dropdown ">
-            <summary className="btn m-1">Sort by downloads</summary>
-            <ul
-              className="menu dropdown-content bg-base-100
-             rounded-box z-1  p-2 shadow-sm"
-            >
-              <li>
-                <a onClick={() => handleSort("low")}>Low-&gt;Height</a>
-              </li>
-              <li>
-                {" "}
-                <a onClick={() => handleSort("high")}>Height-&gt;Low</a>
-              </li>
-            </ul>
-          </details>
+
+          <select defaultValue="Sort by downloads" className="select ">
+            <option disabled={true}>Sort by downloads</option>
+            <option value={"desc"} onClick={() => handleSort("desc")}>
+              {" "}
+              Low-&gt;Height
+            </option>
+            <option value={"asc"} onClick={() => handleSort("asc")}>
+              {" "}
+              Height-&gt;Low
+            </option>
+          </select>
         </div>
         {installedApps.length > 0 ? (
           <ul className="p-2 md:p-0">
