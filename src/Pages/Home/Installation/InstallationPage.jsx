@@ -46,11 +46,11 @@ const InstallationPage = () => {
             <option disabled={true}>Sort by downloads</option>
             <option value={"asc"} onClick={() => handleSort("asc")}>
               {" "}
-              Low-&gt;Height
+              Low-&gt;High
             </option>
             <option value={"desc"} onClick={() => handleSort("desc")}>
               {" "}
-              Height-&gt;Low
+              High-&gt;Low
             </option>
           </select>
         </div>
