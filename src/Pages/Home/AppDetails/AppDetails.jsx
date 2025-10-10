@@ -35,7 +35,9 @@ const AppDetails = () => {
     return <ErrorApp></ErrorApp>;
   }
   const app = apps.find((singleApp) => singleApp.id === appId);
-
+  if (!app) {
+    return <ErrorApp></ErrorApp>;
+  }
   const {
     title,
     image,
