@@ -69,7 +69,7 @@ const Apps = () => {
               <input
                 type="search"
                 value={search}
-                onChange={(e) => setSearch(e.target.value.trim())}
+                onChange={(e) => setSearch(e.target.value.trimStart())}
                 className=" grow stroke-1 stroke-[#D2D2D2] input-ghost"
                 placeholder="Search Apps"
               />

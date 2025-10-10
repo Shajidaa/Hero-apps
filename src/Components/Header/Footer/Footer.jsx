@@ -65,7 +65,7 @@ const Footer = () => {
             </div>
           </nav>
         </div>
-
+        <hr />
         <p className="text-center pb-5 p-10">
           Copyright © {new Date().getFullYear()} - All right reserved by Hero
           Industries Ltd
