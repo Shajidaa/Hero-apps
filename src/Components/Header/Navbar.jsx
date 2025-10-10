@@ -1,11 +1,11 @@
-import { Link, Links, NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import logo from "../../assets/logo.png";
 import gitHub from "../../assets/fi_2111432.png";
 import Container from "./Container/Container";
 const Navbar = () => {
   return (
     <div
-      className=" bg-white stroke-1 
+      className=" sticky top-0 z-40 bg-white stroke-1 
         stroke-[#E9E9E9] shadow-sm lg:px-8 md:px-5 px-5"
     >
       <Container>

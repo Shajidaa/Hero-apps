@@ -48,7 +48,7 @@ const MainLayouts = () => {
     );
   }
   return (
-    <div>
+    <div className="">
       <Navbar></Navbar>
       {isRouteErrorResponse(error) ? (
         <ErrorPage></ErrorPage>

@@ -21,6 +21,7 @@ import {
   ComposedChart,
 } from "recharts";
 import { PropagateLoader } from "react-spinners";
+import CustomTooltip from "../../../Components/CustomTooltip/CustomTooltip";
 const AppDetails = () => {
   const { loading, apps } = useApps();
   const { setInstall, install } = useContext(AppContext);
@@ -143,19 +144,21 @@ const AppDetails = () => {
                   axisLine={false}
                   strikethroughThickness={false}
                   type="number"
+                  tickLine={false}
                 />
                 <YAxis
                   axisLine={false}
                   strikethroughThickness={false}
                   dataKey="name"
                   type="category"
+                  tickLine={false}
                 />
-                <Tooltip />
+                <Tooltip content={<CustomTooltip></CustomTooltip>} />
 
                 <Bar
                   axisLine={false}
                   dataKey="count"
-                  barSize={20}
+                  barSize={40}
                   fill="#FF8811"
                 />
               </ComposedChart>

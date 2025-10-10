@@ -34,7 +34,7 @@ const InstallationPage = () => {
         Explore All Trending Apps on the Market developed by us
       </p>
       <Container>
-        <div className="flex justify-between  items-center mb-4 p-2">
+        <div className="flex justify-between  items-center mb-4 md:p-2 px-2 py-3">
           <p className="font-semibold text-nowrap md:text-2xl w-1/2 mr-1 text-lg text-[#001931]">
             ({installedApps.length})Apps Found
           </p>
