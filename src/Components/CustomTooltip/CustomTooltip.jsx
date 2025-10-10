@@ -4,7 +4,7 @@ const CustomTooltip = ({ active, payload, label }) => {
   if (active && payload && label) {
     const data = payload[0].payload;
     return (
-      <div className="md:w-auto  max-w-full bg-[#FF88] p-2.5 rounded">
+      <div className="md:w-auto  w-fit bg-[#FF88] p-2.5 rounded">
         <p className="flex flex-row justify-center items-center gap-1">
           {" "}
           {data.count} Users rating this app {data.name}{" "}
