@@ -158,7 +158,6 @@ const AppDetails = () => {
           <p>no chart found</p>
         )}
       </div>{" "}
-      */
       <div>
         <h1 className="text-[#001931]  font-semibold text-2xl">Description</h1>
         <p className="text-xl font-normal text-[#627382] md:mt-6 mt-3 md:pb-20 pb-10  ">
