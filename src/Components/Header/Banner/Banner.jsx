@@ -24,6 +24,7 @@ const Banner = () => {
           <div className="lg:my-10 md:my-6 my-3 ">
             <Link
               to="https://play.google.com/store/apps?hl=en"
+              target="blank"
               className="btn  gap-2 stroke-1 stroke-[#627382]
              text-[#001931] font-semibold text-sm md:text-xl md:mr-4 mr-1 "
             >
@@ -35,6 +36,7 @@ const Banner = () => {
             </Link>
             <Link
               to="https://www.apple.com/store"
+              target="blank"
               className="btn  gap-2 stroke-1 stroke-[#627382]
              text-[#001931] font-semibold text-sm md:text-xl  "
             >
