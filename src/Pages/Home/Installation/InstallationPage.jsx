@@ -44,11 +44,11 @@ const InstallationPage = () => {
             className="select  max-w-1/2 "
           >
             <option disabled={true}>Sort by downloads</option>
-            <option value={"desc"} onClick={() => handleSort("desc")}>
+            <option value={"asc"} onClick={() => handleSort("asc")}>
               {" "}
               Low-&gt;Height
             </option>
-            <option value={"asc"} onClick={() => handleSort("asc")}>
+            <option value={"desc"} onClick={() => handleSort("desc")}>
               {" "}
               Height-&gt;Low
             </option>
