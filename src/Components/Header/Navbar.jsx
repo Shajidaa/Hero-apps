@@ -1,4 +1,3 @@
-import React from "react";
 import { Link, Links, NavLink } from "react-router";
 import logo from "../../assets/logo.png";
 import gitHub from "../../assets/fi_2111432.png";
@@ -7,7 +6,7 @@ const Navbar = () => {
   return (
     <div
       className=" bg-white stroke-1 
-        stroke-[#E9E9E9] shadow-sm"
+        stroke-[#E9E9E9] shadow-sm lg:p-2 p-1 md:p-4"
     >
       <Container>
         <div
