@@ -34,12 +34,15 @@ const InstallationPage = () => {
         Explore All Trending Apps on the Market developed by us
       </p>
       <Container>
-        <div className="flex justify-between items-center mb-4 p-2">
-          <p className="font-semibold text-2xl text-[#001931]">
+        <div className="flex justify-between  items-center mb-4 p-2">
+          <p className="font-semibold md:text-2xl w-1/2 text-lg text-[#001931]">
             ({installedApps.length})Apps Found
           </p>
 
-          <select defaultValue="Sort by downloads" className="select ">
+          <select
+            defaultValue="Sort by downloads"
+            className="select  max-w-1/2 "
+          >
             <option disabled={true}>Sort by downloads</option>
             <option value={"desc"} onClick={() => handleSort("desc")}>
               {" "}
@@ -56,45 +59,41 @@ const InstallationPage = () => {
             {installedApps.map((app) => (
               <li
                 key={app.id}
-                className=" list-row p-2  shadow flex flex-wrap  bg-white gap-3 rounded justify-between items-center mb-2 "
+                className=" list-row p-2  shadow flex md:flex-wrap flex-col md:flex-row 
+                 bg-white gap-3 rounded justify-between items-center mb-2 "
               >
-                <div className=" flex flex-row  gap-3">
+                <div className=" flex md:flex-row flex-col  justify-center items-center gap-3">
                   <img
-                    className="md:size-20 size-15 rounded-xl rounded-box"
+                    className="md:size-20 rounded-xl rounded-box"
                     src={app.image}
                   />
+
                   <div>
-                    <div>
-                      <h1 className="font-medium text-base md:text-xl text-[#001931]  ">
-                        {" "}
-                        {app.title}
-                      </h1>
-                      <div className="flex gap-2 md:gap-4">
-                        <div className="flex justify-center items-center ">
-                          <div className="md:w-4 w-2 h-2 md:h-4 ">
-                            <img
-                              className="object-cover"
-                              src={Download}
-                              alt=""
-                            />
-                          </div>
-                          <h1 className="font-bold md:text-base  text-sm text-[#00D390] ">
-                            {app.downloads}M
-                          </h1>
+                    <h1 className="font-medium  text-base md:text-xl text-[#001931]  ">
+                      {" "}
+                      {app.title}
+                    </h1>
+                    <div className="flex justify-center items-center md:justify-start gap-2 md:gap-4">
+                      <div className="flex justify-center items-center ">
+                        <div className="md:w-4 w-2 h-2 md:h-4 ">
+                          <img className="object-cover" src={Download} alt="" />
                         </div>
-                        <div className="flex justify-center items-center ">
-                          <div className="md:w-4 w-2 h-2 md:h-4">
-                            <img className="object-cover" src={rat} alt="" />
-                          </div>
-                          <h1 className="font-bold md:text-base  text-sm text-[#FF8811] ">
-                            {app.ratingAvg}
-                          </h1>
+                        <h1 className="font-bold md:text-base  text-sm text-[#00D390] ">
+                          {app.downloads}M
+                        </h1>
+                      </div>
+                      <div className="flex justify-center items-center ">
+                        <div className="md:w-4 w-2 h-2 md:h-4">
+                          <img className="object-cover" src={rat} alt="" />
                         </div>
-                        <div className="flex justify-center items-center ">
-                          <h1 className="font-bold md:text-base  text-sm text-[#627382] ">
-                            {app.size}MB
-                          </h1>
-                        </div>
+                        <h1 className="font-bold md:text-base  text-sm text-[#FF8811] ">
+                          {app.ratingAvg}
+                        </h1>
+                      </div>
+                      <div className="flex justify-center items-center ">
+                        <h1 className="font-bold md:text-base  text-sm text-[#627382] ">
+                          {app.size}MB
+                        </h1>
                       </div>
                     </div>
                   </div>

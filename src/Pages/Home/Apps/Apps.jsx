@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import useApps from "../../../Hooks/Hooks";
 import AppCard from "../../../Components/Header/AppCard/AppCard";
 import ErrorApp from "../ErrorPages/ErrorApp";
@@ -9,7 +9,7 @@ import { PropagateLoader } from "react-spinners";
 const Apps = () => {
   const { loading, error, apps } = useApps();
   const [search, setSearch] = useState("");
-
+  const [isTyping, setIsTyping] = useState(false);
   const term = search.trim().toLowerCase();
 
   const searchApps = term
@@ -18,6 +18,17 @@ const Apps = () => {
 
   const noResults = !loading && !error && searchApps.length === 0;
 
+  useEffect(() => {
+    if (!search) {
+      setIsTyping(false);
+      return;
+    }
+    setIsTyping(true);
+    const timer = setTimeout(() => {
+      setIsTyping(false);
+    }, 500);
+    return () => clearTimeout(timer);
+  }, [search]);
   return (
     <Container>
       <div>
@@ -57,29 +68,21 @@ const Apps = () => {
               <input
                 type="search"
                 value={search}
-                onChange={(e) => setSearch(e.target.value)}
+                onChange={(e) => setSearch(e.target.value.trim())}
                 className=" grow stroke-1 stroke-[#D2D2D2] input-ghost"
                 placeholder="Search Apps"
               />
             </label>
           </div>
         </div>
-        {error ? (
-          <ErrorApp></ErrorApp>
-        ) : noResults ? (
+        {noResults || error ? (
           <ErrorApp></ErrorApp>
         ) : (
           <div className="grid grid-cols-1 gap-4 mx-auto md:grid-cols-3 lg:grid-cols-4 px-4 lg:px-2 md:px-4">
-            {loading ? (
+            {loading || isTyping ? (
               <div className="col-span-full">
                 <div className="flex justify-center items-center min-h-screen">
-                  <PropagateLoader color="#8e0cae"></PropagateLoader>;
-                </div>
-              </div>
-            ) : search ? (
-              <div className="col-span-full">
-                <div className="flex justify-center items-center min-h-screen">
-                  <PropagateLoader color="#8e0cae"></PropagateLoader>;
+                  <PropagateLoader color="#8e0cae"></PropagateLoader>
                 </div>
               </div>
             ) : (

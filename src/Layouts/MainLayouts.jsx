@@ -43,7 +43,7 @@ const MainLayouts = () => {
   if (loading || pathLoading) {
     return (
       <div className="flex justify-center items-center min-h-screen">
-        <PropagateLoader color="#8e0cae"></PropagateLoader>;
+        <PropagateLoader color="#8e0cae"></PropagateLoader>
       </div>
     );
   }

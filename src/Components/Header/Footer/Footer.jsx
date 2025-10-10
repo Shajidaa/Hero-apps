@@ -27,7 +27,7 @@ const Footer = () => {
             <a className="link link-hover">Cookie policy</a>
           </nav>
         </div>
-        <p className="text-center pb-5 p-2">
+        <p className="text-center pb-5 p-10">
           Copyright © {new Date().getFullYear()} - All right reserved by Hero
           Industries Ltd
         </p>
