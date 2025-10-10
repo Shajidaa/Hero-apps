@@ -8,7 +8,7 @@ const CustomTooltip = ({ active, payload, label }) => {
         <p className="flex flex-row justify-center items-center gap-1">
           {" "}
           {data.count} Users rating this app {data.name}{" "}
-          <span className=" inline-block ">
+          <span className=" md:inline-block hidden ">
             {" "}
             <img src={rat} alt="" className="w-5 h-5 " />
           </span>
