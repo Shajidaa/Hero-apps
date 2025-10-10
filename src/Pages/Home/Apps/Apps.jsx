@@ -8,11 +8,13 @@ import Spinner from "../../../Components/Header/Spinner/Spinner";
 const Apps = () => {
   const { loading, error, apps } = useApps();
   const [search, setSearch] = useState("");
+
   const term = search.trim().toLowerCase();
 
   const searchApps = term
     ? apps.filter((app) => app.title.toLowerCase().includes(term))
     : apps;
+
   const noResults = !loading && !error && searchApps.length === 0;
 
   return (

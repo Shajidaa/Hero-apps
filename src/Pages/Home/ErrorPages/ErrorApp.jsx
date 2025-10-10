@@ -4,7 +4,7 @@ import img from "../../../assets/App-Error.png";
 import { Link, Links } from "react-router";
 const ErrorApp = () => {
   return (
-    <div className="flex  flex-col justify-center items-center   ">
+    <div className="flex  flex-col justify-center items-center  min-h-dvh  ">
       <div>
         <img src={img} alt="" />
       </div>
