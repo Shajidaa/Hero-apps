@@ -17,10 +17,10 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
   ResponsiveContainer,
   ComposedChart,
 } from "recharts";
+import { PropagateLoader } from "react-spinners";
 const AppDetails = () => {
   const { loading, apps } = useApps();
   const { setInstall, install } = useContext(AppContext);
@@ -29,7 +29,11 @@ const AppDetails = () => {
   const appId = Number(id);
 
   if (loading) {
-    return <Spinner></Spinner>;
+    return (
+      <div className="flex justify-center items-center p-10">
+        <PropagateLoader color="#8e0cae"></PropagateLoader>
+      </div>
+    );
   }
   if (!appId) {
     return <ErrorApp></ErrorApp>;
@@ -63,7 +67,7 @@ const AppDetails = () => {
   const isInstalled = install.some((appId) => appId === id);
 
   return (
-    <div className=" mt-20 container mx-auto lg:p-2 p-5 ">
+    <div className=" mt-20 container mx-auto lg:px-8 md:px-5 px-5 ">
       <div className="flex flex-col justify-center  md:flex-row md:justify-between items-center gap-10">
         <div className="md:w-[350px] w-full  md:h-[350px] ">
           <img

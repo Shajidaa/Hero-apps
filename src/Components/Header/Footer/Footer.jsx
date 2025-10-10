@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className=" bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white mt-20">
       <Container>
-        <div className="footer sm:footer-horizontal  text-neutral-content p-10">
+        <div className="footer sm:footer-horizontal  text-neutral-content lg:p-8 md:p-5 p-5">
           <nav>
             <h6 className="footer-title">Services</h6>
             <a className="link link-hover">Branding</a>

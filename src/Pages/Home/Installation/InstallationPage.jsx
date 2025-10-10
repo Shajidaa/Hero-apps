@@ -23,8 +23,8 @@ const InstallationPage = () => {
   };
 
   return (
-    <div>
-      <h1 className="font-bold text-3xl text-center md:mt-20 mt-10 md:text-5xl text-[#001931]  ">
+    <div className="lg:px-8 md:px-5 px-4">
+      <h1 className="font-bold text-3xl  text-center md:mt-20 mt-10 md:text-5xl text-[#001931]  ">
         Your Installed Apps
       </h1>
       <p
@@ -35,7 +35,7 @@ const InstallationPage = () => {
       </p>
       <Container>
         <div className="flex justify-between  items-center mb-4 p-2">
-          <p className="font-semibold md:text-2xl w-1/2 text-lg text-[#001931]">
+          <p className="font-semibold text-nowrap md:text-2xl w-1/2 mr-1 text-lg text-[#001931]">
             ({installedApps.length})Apps Found
           </p>
 

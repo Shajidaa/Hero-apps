@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div
       className=" bg-white stroke-1 
-        stroke-[#E9E9E9] shadow-sm lg:p-2 p-1 md:p-4"
+        stroke-[#E9E9E9] shadow-sm lg:px-8 md:px-5 px-5"
     >
       <Container>
         <div
@@ -18,8 +18,12 @@ const Navbar = () => {
               to="/"
               className=" flex gap-1 flex-row justify-center items-center text-xl"
             >
-              <span>
-                <img className="size-10" src={logo} alt="" />
+              <span className="md:w-10 md:h-10  w-7 h-7 ">
+                <img
+                  className="max-w-full max-h-full object-contain"
+                  src={logo}
+                  alt=""
+                />
               </span>
               <span className="font-bold text-base gradient-text">HERO.IO</span>
             </Link>

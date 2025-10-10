@@ -10,6 +10,7 @@ const Apps = () => {
   const { loading, error, apps } = useApps();
   const [search, setSearch] = useState("");
   const [isTyping, setIsTyping] = useState(false);
+
   const term = search.trim().toLowerCase();
 
   const searchApps = term
@@ -32,23 +33,23 @@ const Apps = () => {
   return (
     <Container>
       <div>
-        <div>
+        <div className="px-2 ">
           <h1 className="font-bold text-3xl text-center md:mt-20 mt-10 md:text-5xl text-[#001931]  ">
             Our All Applications
           </h1>
           <p
-            className="text-[#627382] text-xl font-normal lg:leading-20 md:leading-15 leading-10
+            className="text-[#627382] text-xl  font-normal lg:leading-20 md:leading-15 leading-8
             text-center"
           >
             Explore All Apps on the Market developed by us. We code for Millions
           </p>
         </div>
-        <div className="flex justify-between items-center mb-4 px-4 lg:px-0 md:px-4">
-          <h1 className="font-semibold text-2xl text-[#001931]">
+        <div className="flex justify-between gap-2 items-center mt-2 mb-4 lg:px-8 md:px-5 px-5">
+          <h1 className="font-semibold text-nowrap text-lg w-1/2  md:text-2xl text-[#001931]">
             (<span>{searchApps.length}</span>) Apps Found{" "}
           </h1>
-          <div>
-            <label className="input">
+          <div className="max-w-1/2">
+            <label className="input  ">
               <svg
                 className="h-[1em] opacity-50"
                 xmlns="http://www.w3.org/2000/svg"
@@ -78,10 +79,10 @@ const Apps = () => {
         {noResults || error ? (
           <ErrorApp></ErrorApp>
         ) : (
-          <div className="grid grid-cols-1 gap-4 mx-auto md:grid-cols-3 lg:grid-cols-4 px-4 lg:px-2 md:px-4">
+          <div className="grid grid-cols-1 gap-4 mx-auto md:grid-cols-3 lg:grid-cols-4 lg:p-8 md:p-5 p-5">
             {loading || isTyping ? (
               <div className="col-span-full">
-                <div className="flex justify-center items-center min-h-screen">
+                <div className="flex justify-center items-center">
                   <PropagateLoader color="#8e0cae"></PropagateLoader>
                 </div>
               </div>
