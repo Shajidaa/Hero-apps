@@ -15,6 +15,6 @@ Hero.io is a modern web platform that lets users explore ,browse,and download ap
 
 ---
 
-### 🔗 Links
+### 🔗 Link
 
 [View Project](https://hero-io-by-shajida.netlify.app/)
