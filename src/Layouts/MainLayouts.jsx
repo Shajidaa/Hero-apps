@@ -29,7 +29,7 @@ const MainLayouts = () => {
     setPathLoading(true);
     const moment = setTimeout(() => {
       setPathLoading(false);
-    }, 3000);
+    }, 700);
     return () => clearTimeout(moment);
   }, [location]);
 

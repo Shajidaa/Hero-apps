@@ -71,10 +71,16 @@ const Apps = () => {
         ) : (
           <div className="grid grid-cols-1 gap-4 mx-auto md:grid-cols-3 lg:grid-cols-4 px-4 lg:px-2 md:px-4">
             {loading ? (
-              <Spinner></Spinner>
+              <div className="col-span-full">
+                <div className="flex justify-center items-center min-h-screen">
+                  <PropagateLoader color="#8e0cae"></PropagateLoader>;
+                </div>
+              </div>
             ) : search ? (
-              <div className="flex justify-center items-center min-h-screen">
-                <PropagateLoader color="#8e0cae"></PropagateLoader>;
+              <div className="col-span-full">
+                <div className="flex justify-center items-center min-h-screen">
+                  <PropagateLoader color="#8e0cae"></PropagateLoader>;
+                </div>
               </div>
             ) : (
               searchApps.map((app) => (
