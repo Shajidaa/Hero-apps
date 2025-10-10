@@ -4,16 +4,7 @@ const CustomTooltip = ({ active, payload, label }) => {
   if (active && payload && label) {
     const data = payload[0].payload;
     return (
-      <div
-        className="w-auto "
-        style={{
-          backgroundColor: "#FF88",
-          padding: "10px",
-          border: "none",
-          borderRadius: "4px",
-          width: "100%",
-        }}
-      >
+      <div className="md:w-auto  max-w-full bg-[#FF88] p-2.5 rounded">
         <p className="flex flex-row justify-center items-center gap-1">
           {" "}
           {data.count} Users rating this app {data.name}{" "}
