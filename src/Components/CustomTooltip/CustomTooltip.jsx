@@ -5,6 +5,7 @@ const CustomTooltip = ({ active, payload, label }) => {
     const data = payload[0].payload;
     return (
       <div
+        className="max-w-full md:w-auto "
         style={{
           backgroundColor: "#FF88",
           padding: "10px",
@@ -12,9 +13,9 @@ const CustomTooltip = ({ active, payload, label }) => {
           borderRadius: "4px",
         }}
       >
-        <p>
+        <p className="flex flex-row justify-center items-center gap-1">
           {" "}
-          {data.count} Users rat this app {data.name}{" "}
+          {data.count} Users rating this app {data.name}{" "}
           <span className=" inline-block ">
             {" "}
             <img src={rat} alt="" className="w-5 h-5 " />
