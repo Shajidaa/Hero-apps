@@ -21,18 +21,18 @@ Hero.io is a modern web platform that lets users explore ,browse,and download ap
 
 🚀 Local Installation
 
-# 1. Clone the repository
+### 1. Clone the repository
 
 git clone https://github.com/Shajidaa/Hero-apps.git
 
-# 2. Enter project folder
+### 2. Enter project folder
 
 cd hero.io
 
-# 3. Install dependencies
+### 3. Install dependencies
 
 npm install
 
-# 4. Start development server
+### 4. Start development server
 
 npm run dev
